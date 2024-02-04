@@ -22,6 +22,8 @@ export function createShoppingCart() {
      */
     function getTotalPrice() {
         // 請在此處寫下你的程式碼
+        let sum:number =0;
+        items?.map((item)=>sum+=item?.price)
     }
 
     function getItemCount() {

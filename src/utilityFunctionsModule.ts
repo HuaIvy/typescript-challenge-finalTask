@@ -1,3 +1,4 @@
+import * as dayjs from 'dayjs';
 /**
  * 任務：實作一個函式 `formatDate`，將日期物件轉換為 'YYYY-MM-DD' 的格式。
  *
@@ -9,6 +10,7 @@
  */
 export function formatDate(date: Date): string {
     // 請在此處寫下你的程式碼
+    return dayjs(date).format('YYYY-MM-DD'); 
 }
 
 /**
@@ -22,4 +24,5 @@ export function formatDate(date: Date): string {
  */
 export function roundNumber(num: number): number {
     // 請在此處寫下你的程式碼
+    return Math.round(num);
 }

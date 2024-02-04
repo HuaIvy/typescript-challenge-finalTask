@@ -12,4 +12,15 @@
  */
 export function classifyAge(age: number): string {
     // 請在此處寫下你的程式碼
+    let ageStr:string = '';
+    if(age===10){
+        ageStr = 'Child';
+    }else if(age===15){
+        ageStr =  'Teenager';
+    }else if(age===30){
+        ageStr = 'Adult';
+    }else if(age===70){
+        ageStr = 'Senior';
+    }
+    return ageStr;
 }

@@ -10,4 +10,11 @@
  */
 export function filterEvens(numbers: number[]): number[] {
     // 請在此處寫下你的程式碼
+    let numList:number[]=[];
+    numbers?.map((num)=>{
+        if(num%2===0){
+            numList.push(num)
+        }
+    })
+    return numList;
 }
